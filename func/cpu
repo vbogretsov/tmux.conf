@@ -1,0 +1,11 @@
+count=2
+
+getcpu() {
+    iostat -c $count | awk -v count=$count '
+        NR>2 \
+        {ur+=$4; sm+=$5; id+=$6} \
+        END {printf("CPU: %3.3s%% %3.3s%% %3.3s%%", ur/count, sm/count, id/count)}\
+    '
+}
+
+getcpu
