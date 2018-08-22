@@ -1,5 +1,6 @@
 # Prefix
-set-option -g prefix M-a
+#set-option -g prefix M-a
+set-option -g prefix C-a
 
 # Esc delay
 set -sg escape-time 0
@@ -14,11 +15,12 @@ bind . resize-pane -R 10
 bind - resize-pane -D 10
 bind = resize-pane -U 10
 
+unbind w
 bind w new-window
 bind l choose-window
 
 # start selection with 'space' and copy using 'y'
 bind e copy-mode
 
-bind-key -Tcopy-mode-vi 'e' send -X begin-selection
+bind-key -Tcopy-mode-vi 'v' send -X begin-selection
 bind-key -Tcopy-mode-vi 'y' send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
