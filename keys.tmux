@@ -1,6 +1,7 @@
 # Prefix
 #set-option -g prefix M-a
-set-option -g prefix C-a
+#set-option -g prefix C-a
+set-option -g prefix C-b
 
 # Esc delay
 set -sg escape-time 0
