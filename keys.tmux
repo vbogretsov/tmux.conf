@@ -16,9 +16,10 @@ bind . resize-pane -R 10
 bind - resize-pane -D 10
 bind = resize-pane -U 10
 
-unbind w
 bind w new-window
+bind x kill-pane
 bind l choose-window
+bind p resize-pane -Z
 
 # start selection with 'space' and copy using 'y'
 bind e copy-mode

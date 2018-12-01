@@ -42,7 +42,7 @@ set -g set-titles-string 'Terminal'
 set -g status-left-length 300
 set -g status-right-length 300
 
-set -g status-left '#[fg=colour234,bg=colour148] #($func/username) #[fg=colour148,bg=colour32]#[fg=colour0,bg=colour32] #($func/hostname) #[fg=colour32,bg=colour24]#[fg=colour250,bg=colour24] #($func/curdir) #[fg=colour24,bg=colour0]#[fg=colour245,bg=colour0] #($func/gitbranch #{pane_current_path}) #[default] '
+set -g status-left '#[fg=black,bg=green] #($func/username) #[fg=green,bg=blue]#[fg=colour0,bg=blue] #($func/hostname) #[fg=blue,bg=black]#[fg=colour12,bg=black] #($func/curdir) #[fg=colour12,bg=colour0]#[fg=colour12,bg=colour0] #($func/gitbranch #{pane_current_path}) #[default] '
 #set -g status-right '#[default]#[fg=green] #($func/mem) #[fg=green] #($func/cpu) #[fg=green] #($func/battery) #[fg=green] %H:%M #[default]#[fg=green]#[default]#[fg=green] %h-%d#[default]'
 set -g status-right '#[default]#[fg=green] %H:%M #[default]#[fg=green]#[default]#[fg=green] %h-%d#[default]'
 
@@ -50,5 +50,5 @@ set -g window-status-separator ''
 
 set-window-option -g window-status-bell-style 'fg=red,blink,bg=default'
 set-window-option -g window-status-activity-style 'fg=red,blink,bg=default'
-set-window-option -g window-status-format '#[fg=black,bg=colour31] #[fg=colour252,bg=colour31]#I:#{=15:window_name}#{?window_bell_flag,!,} #[fg=colour31,bg=default]#[black]'
-set-window-option -g window-status-current-format '#[fg=black,bg=colour30] #[fg=colour252,bg=colour30]#I:#W #[fg=colour30,bg=default]#[default]'
+set-window-option -g window-status-format '#[fg=black,bg=blue] #[fg=white,bg=blue]#I:#{=15:window_name}#{?window_bell_flag,!,} #[fg=blue,bg=default]#[black]'
+set-window-option -g window-status-current-format '#[fg=black,bg=cyan] #[fg=white,bg=cyan]#I:#W #[fg=cyan,bg=default]#[default]'
