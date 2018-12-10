@@ -50,5 +50,5 @@ set -g window-status-separator ''
 
 set-window-option -g window-status-bell-style 'fg=red,blink,bg=default'
 set-window-option -g window-status-activity-style 'fg=red,blink,bg=default'
-set-window-option -g window-status-format '#[fg=black,bg=blue] #[fg=white,bg=blue]#I:#{=15:window_name}#{?window_bell_flag,!,} #[fg=blue,bg=default]#[black]'
+set-window-option -g window-status-format '#[fg=black,bg=colour10] #[fg=white,bg=colour10]#I:#{=15:window_name}#{?window_bell_flag,!,} #[fg=colour10,bg=default]#[black]'
 set-window-option -g window-status-current-format '#[fg=black,bg=cyan] #[fg=white,bg=cyan]#I:#W #[fg=cyan,bg=default]#[default]'
