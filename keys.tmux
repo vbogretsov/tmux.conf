@@ -1,6 +1,4 @@
 # Prefix
-#set-option -g prefix M-a
-#set-option -g prefix C-a
 set-option -g prefix C-s
 
 # XTerm keys
