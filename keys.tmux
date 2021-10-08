@@ -8,8 +8,8 @@ setw -g xterm-keys on
 set -sg escape-time 0
 
 # Windows split keys
-bind v split-window -v
-bind h split-window -h
+bind v split-window -v -c "#{pane_current_path}"
+bind h split-window -h -c "#{pane_current_path}"
 
 # resize panes like vim
 bind , resize-pane -L 10
