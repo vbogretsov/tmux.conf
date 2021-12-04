@@ -34,12 +34,14 @@ set -g set-titles-string 'Terminal'
 
 #### STATUS LINE
 
-set -g status-left-length 300
-set -g status-right-length 300
+set -g status-left-length 100
+set -g status-right-length 100
 
-set -g status-left '#[fg=black,bg=cyan] #($func/username) #[fg=cyan,bg=blue]#[fg=colour0,bg=blue] #($func/hostname) #[fg=blue,bg=black]#[fg=colour10,bg=black] #($func/curdir) #[fg=colour10,bg=colour0]#[fg=colour10,bg=colour0] #($func/gitbranch #{pane_current_path}) #[default] '
+# set -g status-left '#[fg=black,bg=cyan] #($func/username) #[fg=cyan,bg=blue]#[fg=colour0,bg=blue] #($func/hostname) #[fg=blue,bg=black]#[fg=colour10,bg=black] #($func/curdir) #[fg=colour10,bg=colour0]#[fg=colour10,bg=colour0] #($func/gitbranch #{pane_current_path}) #[default] '
+set -g status-left '#[fg=black,bg=cyan] #($func/username) #[fg=cyan,bg=blue]#[fg=colour0,bg=blue] #($func/hostname) #[fg=blue,bg=black] #[fg=colour10,bg=colour0] #($func/gitbranch #{pane_current_path}) #[default] '
 #set -g status-right '#[default]#[fg=green] #($func/mem) #[fg=green] #($func/cpu) #[fg=green] #($func/battery) #[fg=green] %H:%M #[default]#[fg=green]#[default]#[fg=green] %h-%d #[default]'
-set -g status-right '#[fg=cyan,bg=black]  #(tmux-mem-cpu-load -m -t -g 10 -a 0 -i 2)  #[default]#[fg=cyan] %H:%M #[default]#[fg=cyan]#[default]#[fg=cyan] %h-%d#[default]'
+# set -g status-right '#[fg=cyan,bg=black]  #(tmux-mem-cpu-load -m -t -g 10 -a 0 -i 2)  #[default]#[fg=cyan] %H:%M #[default]#[fg=cyan]#[default]#[fg=cyan] %h-%d#[default]'
+set -g status-right '#[fg=cyan,bg=black]  #(tmux-mem-cpu-load -m -t -g 10 -a 0 -i 2) '
 
 set -g window-status-separator ''
 
