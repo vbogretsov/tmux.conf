@@ -5,7 +5,7 @@ set-option -g prefix C-s
 setw -g xterm-keys on
 
 # Esc delay
-set -sg escape-time 0
+set -sg escape-time 10
 
 # Windows split keys
 bind v split-window -v -c "#{pane_current_path}"
