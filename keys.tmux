@@ -12,10 +12,10 @@ bind v split-window -v -c "#{pane_current_path}"
 bind h split-window -h -c "#{pane_current_path}"
 
 # resize panes like vim
-bind , resize-pane -L 10
-bind . resize-pane -R 10
-bind - resize-pane -D 10
-bind = resize-pane -U 10
+bind , resize-pane -L 5
+bind . resize-pane -R 5
+bind - resize-pane -D 5
+bind = resize-pane -U 5
 
 bind w new-window
 bind x kill-pane

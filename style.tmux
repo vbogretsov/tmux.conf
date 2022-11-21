@@ -29,16 +29,12 @@ set-window-option -g window-status-bell-style fg=black,bg=red
 
 #### title
 
-set -g set-titles-string 'Terminal'
-# set -g set-titles-string '#h ❐ #S ● #I #W'
-
 #### STATUS LINE
 
 set -g status-left-length 100
 set -g status-right-length 100
 
 set -g status-left '#[fg=black,bg=green] #($func/username) #[fg=cyan,bg=blue]#[fg=colour0,bg=blue] #($func/hostname) #[fg=blue,bg=black] #[fg=colour15,bg=colour0] #{pane_current_path} #[fg=colour10,bg=colour0] #($func/gitbranch #{pane_current_path}) #[default] '
-# set -g status-right '#[fg=cyan,bg=black] #($func/cpu) #($func/mem) '
 set -g status-right '#[fg=cyan,bg=black]'
 
 set -g window-status-separator ''
@@ -47,5 +43,4 @@ set-window-option -g window-status-bell-style 'fg=red,blink,bg=default'
 set-window-option -g window-status-activity-style 'fg=red,blink,bg=default'
 set-window-option -g window-status-format '#[fg=black,bg=white] #I:#{=15:window_name}#{?window_bell_flag,!,} #[fg=colour10,bg=default]#[black] '
 set-window-option -g window-status-current-format '#[fg=black,bg=cyan] #[fg=black,bg=cyan]#I:#W #[fg=cyan,bg=default]#[default] '
-# set -g status-justify centre
 set -g status-justify right
